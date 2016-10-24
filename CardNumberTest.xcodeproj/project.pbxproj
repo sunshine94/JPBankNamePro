@@ -15,6 +15,7 @@
 		E84E6BBB1DBDFA24003573A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E84E6BB91DBDFA24003573A1 /* LaunchScreen.storyboard */; };
 		E84E6BC61DBDFA24003573A1 /* CardNumberTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E84E6BC51DBDFA24003573A1 /* CardNumberTestTests.m */; };
 		E84E6BD11DBDFA24003573A1 /* CardNumberTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E84E6BD01DBDFA24003573A1 /* CardNumberTestUITests.m */; };
+		E84E6BDF1DBE001D003573A1 /* bank.plist in Resources */ = {isa = PBXBuildFile; fileRef = E84E6BDE1DBE001D003573A1 /* bank.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +38,8 @@
 /* Begin PBXFileReference section */
 		E84E6BA81DBDFA24003573A1 /* CardNumberTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardNumberTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E84E6BAC1DBDFA24003573A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E84E6BAE1DBDFA24003573A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E84E6BAF1DBDFA24003573A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E84E6BAE1DBDFA24003573A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E84E6BAF1DBDFA24003573A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		E84E6BB11DBDFA24003573A1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E84E6BB21DBDFA24003573A1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E84E6BB51DBDFA24003573A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,11 +47,12 @@
 		E84E6BBA1DBDFA24003573A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E84E6BBC1DBDFA24003573A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E84E6BC11DBDFA24003573A1 /* CardNumberTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardNumberTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E84E6BC51DBDFA24003573A1 /* CardNumberTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardNumberTestTests.m; sourceTree = "<group>"; };
+		E84E6BC51DBDFA24003573A1 /* CardNumberTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CardNumberTestTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		E84E6BC71DBDFA24003573A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E84E6BCC1DBDFA24003573A1 /* CardNumberTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardNumberTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E84E6BD01DBDFA24003573A1 /* CardNumberTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardNumberTestUITests.m; sourceTree = "<group>"; };
 		E84E6BD21DBDFA24003573A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E84E6BDE1DBE001D003573A1 /* bank.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bank.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		E84E6BAA1DBDFA24003573A1 /* CardNumberTest */ = {
 			isa = PBXGroup;
 			children = (
+				E84E6BDE1DBE001D003573A1 /* bank.plist */,
 				E84E6BAE1DBDFA24003573A1 /* AppDelegate.h */,
 				E84E6BAF1DBDFA24003573A1 /* AppDelegate.m */,
 				E84E6BB11DBDFA24003573A1 /* ViewController.h */,
@@ -246,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E84E6BDF1DBE001D003573A1 /* bank.plist in Resources */,
 				E84E6BBB1DBDFA24003573A1 /* LaunchScreen.storyboard in Resources */,
 				E84E6BB81DBDFA24003573A1 /* Assets.xcassets in Resources */,
 				E84E6BB61DBDFA24003573A1 /* Main.storyboard in Resources */,

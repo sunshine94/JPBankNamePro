@@ -2,8 +2,8 @@
 //  main.m
 //  CardNumberTest
 //
-//  Created by 贾萍 on 16/10/24.
-//  Copyright © 2016年 贾萍. All rights reserved.
+//  Created by JP on 16/10/24.
+//  Copyright © 2016年 JP. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
