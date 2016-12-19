@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITextFieldDelegate>
 {
 //    NSArray* bankName;
 //    NSArray* bankBin;
@@ -30,6 +30,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.textField.delegate = self;
     // Do any additional setup after loading the view, typically from a nib.
 //    [self returnBankName:@"你的银行卡号"];
 }
@@ -60,6 +61,43 @@
     }
     return @"";
     
+}
+
+-(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
+    
+        NSString *text = [self.textField text];
+        
+        NSCharacterSet *characterSet = [NSCharacterSet characterSetWithCharactersInString:@"0123456789\b"];
+        string = [string stringByReplacingOccurrencesOfString:@" " withString:@""];
+        
+        if ([string rangeOfCharacterFromSet:[characterSet invertedSet]].location != NSNotFound) {
+            return NO;
+        }
+        
+        text = [text stringByReplacingCharactersInRange:range withString:string];
+        text = [text stringByReplacingOccurrencesOfString:@" " withString:@""];
+        
+        NSString *newString = @"";
+        while (text.length > 0) {
+            
+            NSString *subString = [text substringToIndex:MIN(text.length, 4)];
+            newString = [newString stringByAppendingString:subString];
+            if (subString.length == 4) {
+                newString = [newString stringByAppendingString:@" "];
+            }
+            text = [text substringFromIndex:MIN(text.length, 4)];
+        }
+        
+        newString = [newString stringByTrimmingCharactersInSet:[characterSet invertedSet]];
+        
+        // 限制长度
+        if (newString.length >= 24) {
+            return NO;
+        }
+        
+        [self.textField setText:newString];
+        
+        return NO;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
